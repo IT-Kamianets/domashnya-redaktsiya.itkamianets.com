@@ -1,12 +1,12 @@
 # Agent Guide
 
-This repository contains a single Angular 21 website for a HoReCa business. It is a static, prerender-first marketing website with a few simple pages such as home, menu, about, contacts, gallery, reservation, delivery, or events.
+This repository contains a single Angular 21 website for a Домашня Редакція business. It is a static, prerender-first marketing website with a few simple pages such as home, menu, about, contacts, gallery, reservation, delivery, or events.
 
 ## Quick Reference
 
 - Stack: Angular 21, TypeScript 5, Angular SSR/prerender, Tailwind CSS, SCSS
 - Package manager: `npm`
-- Main goal: fast, clean, SEO-friendly HoReCa landing pages
+- Main goal: fast, clean, SEO-friendly Домашня Редакція landing pages
 - Primary output: prerendered static site from `dist/app/browser`
 
 ## Universal Rules
