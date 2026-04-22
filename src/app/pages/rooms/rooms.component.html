@@ -1,0 +1,148 @@
+<main class="mx-auto max-w-[var(--container)] px-3 pb-10 pt-3 sm:px-4 sm:pb-12">
+	<section
+		class="rooms-shell overflow-hidden rounded-[1.5rem] border border-[var(--c-border)] bg-[var(--c-bg-secondary)] shadow-[var(--shadow-sm)]"
+	>
+		<div class="grid gap-0 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+			<div class="relative min-h-[18rem] lg:min-h-[30rem]">
+				<img
+					class="object-cover"
+					ngSrc="room/room-1.webp"
+					alt="Демо готельний номер Horeca"
+					fill
+					priority
+					sizes="(max-width: 1023px) 100vw, 60vw"
+				/>
+			</div>
+
+			<div class="flex flex-col justify-center px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+				<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
+					Номери
+				</p>
+				<h1 class="mt-3 text-[2rem] font-semibold leading-tight text-[var(--c-text-secondary)] sm:text-[2.4rem]">
+					Демо-сторінка номерів для HoReCa бізнесу
+				</h1>
+				<p class="mt-4 text-sm leading-7 text-[var(--c-text-muted)]">
+					Цей розділ можна адаптувати для готелю, ресторанно-готельного комплексу,
+					садиби, апарт-готелю або заміського відпочинкового простору.
+				</p>
+				<p class="mt-3 text-sm leading-7 text-[var(--c-text-muted)]">
+					Покажіть категорії номерів, ключові зручності, фото, вартість і швидкий
+					спосіб бронювання для гостей.
+				</p>
+				<p class="mt-3 text-sm leading-7 text-[var(--c-text-muted)]">
+					Вартість номерів <span class="font-semibold text-[var(--c-text-secondary)]">від 1800 грн/доба</span>.
+				</p>
+			</div>
+		</div>
+
+		<div class="border-t border-[var(--c-border)] px-4 py-6 sm:px-6 lg:px-8">
+			<div class="grid gap-6 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+				<div>
+					<h2 class="text-lg font-semibold text-[var(--c-text-secondary)]">
+						Що доступно гостям
+					</h2>
+					<p class="mt-3 text-sm leading-7 text-[var(--c-text-muted)]">
+						Додайте послуги, які важливі саме для вашого закладу: сніданок, ресторан,
+						паркінг, SPA, конференц-зал, трансфер або проживання з тваринами.
+					</p>
+				</div>
+
+				<div class="grid gap-3 sm:grid-cols-2">
+					@for (amenity of amenities; track amenity) {
+						<div
+							class="amenity-chip rounded-[1rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)] px-4 py-3 text-sm text-[var(--c-text-secondary)]"
+						>
+							{{ amenity }}
+						</div>
+					}
+				</div>
+			</div>
+		</div>
+
+		<div class="border-t border-[var(--c-border)] px-4 py-6 sm:px-6 lg:px-8">
+			<div class="grid gap-5 xl:grid-cols-3">
+				@for (room of rooms; track room.name) {
+					<article
+						class="room-card overflow-hidden rounded-[1.35rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)]"
+					>
+						<div class="relative min-h-[15rem]">
+							<img
+								class="object-cover"
+								[ngSrc]="room.image"
+								[alt]="room.imageAlt"
+								fill
+								sizes="(max-width: 1279px) 100vw, 34vw"
+							/>
+						</div>
+
+						<div class="p-5 sm:p-6">
+							<h2 class="text-[1.45rem] font-semibold leading-tight text-[var(--c-text-secondary)]">
+								{{ room.name }}
+							</h2>
+							<p class="mt-4 text-sm leading-7 text-[var(--c-text-muted)]">
+								{{ room.description }}
+							</p>
+							<div class="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+								<p class="text-sm font-semibold uppercase tracking-[0.12em] text-[var(--c-secondary)]">
+									Вартість: {{ room.price }}
+								</p>
+								<a
+									class="inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--c-secondary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--c-bg-primary)]"
+									href="tel:+380970000000"
+									aria-label="Зателефонувати для бронювання номера"
+								>
+									Забронювати
+								</a>
+							</div>
+						</div>
+					</article>
+				}
+			</div>
+		</div>
+
+		<div class="border-t border-[var(--c-border)] px-4 py-6 sm:px-6 lg:px-8">
+			<div class="grid gap-4 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+				<div class="rounded-[1.25rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)] p-5 sm:p-6">
+					<p class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]">
+						Бронювання
+					</p>
+					<h2 class="mt-3 text-[1.5rem] font-semibold text-[var(--c-text-secondary)]">
+						Зв'яжіться з нами зручним способом
+					</h2>
+					<p class="mt-3 text-sm leading-7 text-[var(--c-text-muted)]">
+						Використовуйте цей блок для телефону, месенджерів або форми бронювання.
+						У демо-версії вказані безпечні тестові контакти.
+					</p>
+				</div>
+
+				<div class="grid gap-4 sm:grid-cols-3">
+					@for (link of contactLinks; track link.label) {
+						<a
+							class="contact-card rounded-[1.25rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)] p-5 text-left transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--c-secondary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--c-bg-secondary)]"
+							[href]="link.href"
+							[target]="link.href.startsWith('http') || link.href.startsWith('viber:') ? '_blank' : null"
+							[rel]="link.href.startsWith('http') || link.href.startsWith('viber:') ? 'noreferrer nofollow' : null"
+						>
+							<p class="text-sm font-semibold text-[var(--c-text-secondary)]">
+								{{ link.label }}
+							</p>
+							<p class="mt-2 text-sm leading-6 text-[var(--c-text-muted)]">
+								{{ link.description }}
+							</p>
+						</a>
+					}
+				</div>
+			</div>
+		</div>
+
+		<div class="border-t border-[var(--c-border)] bg-[var(--c-bg-primary)]/70 px-4 py-8 sm:px-6 lg:px-8">
+			<img
+				class="mx-auto h-auto w-24 opacity-90 sm:w-28"
+				ngSrc="logo.png"
+				alt="Horeca"
+				width="720"
+				height="720"
+			/>
+		</div>
+	</section>
+</main>

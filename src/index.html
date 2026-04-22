@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+		<title>Horeca | шаблон сайту для ресторану, кафе, готелю та доставки</title>
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			try {
+				const storedMode = localStorage.getItem('app-mode');
+				const preferredMode =
+					storedMode === 'dark' || storedMode === 'light'
+						? storedMode
+						: window.matchMedia('(prefers-color-scheme: dark)').matches
+							? 'dark'
+							: 'light';
+				document.documentElement.setAttribute('data-mode', preferredMode);
+			} catch {}
+		</script>
+
+		<meta
+			name="description"
+			content="Horeca - готовий шаблон сайту для українських ресторанів, кафе, готелів, барів, доставки їжі та кейтерингу. Показуйте меню, фото, контакти, бронювання, події, акції та соціальні мережі на швидкому SEO-friendly сайті."
+		/>
+		<meta
+			name="keywords"
+			content="Horeca, ресторан, кафе, готель, бар, доставка їжі, кейтеринг, меню, бронювання, події, акції, HoReCa сайт, сайт для ресторану"
+		/>
+		<meta name="author" content="Horeca" />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+
+		<meta
+			itemprop="name"
+			content="Horeca | шаблон сайту для ресторану, кафе, готелю та доставки"
+		/>
+		<meta
+			itemprop="description"
+			content="Horeca - готовий шаблон сайту для українських ресторанів, кафе, готелів, барів, доставки їжі та кейтерингу. Показуйте меню, фото, контакти, бронювання, події, акції та соціальні мережі на швидкому SEO-friendly сайті."
+		/>
+		<meta itemprop="image" content="https://horeca.itkamianets.com/assets/logo.png" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Horeca" />
+		<meta property="og:locale" content="uk_UA" />
+		<meta property="og:url" content="https://horeca.itkamianets.com/" />
+		<meta
+			property="og:title"
+			content="Horeca | шаблон сайту для ресторану, кафе, готелю та доставки"
+		/>
+		<meta
+			property="og:description"
+			content="Horeca - готовий шаблон сайту для українських ресторанів, кафе, готелів, барів, доставки їжі та кейтерингу. Показуйте меню, фото, контакти, бронювання, події, акції та соціальні мережі на швидкому SEO-friendly сайті."
+		/>
+		<meta property="og:image" content="https://horeca.itkamianets.com/assets/logo.png" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Horeca | шаблон сайту для ресторану, кафе, готелю та доставки"
+		/>
+		<meta
+			name="twitter:description"
+			content="Horeca - готовий шаблон сайту для українських ресторанів, кафе, готелів, барів, доставки їжі та кейтерингу. Показуйте меню, фото, контакти, бронювання, події, акції та соціальні мережі на швидкому SEO-friendly сайті."
+		/>
+		<meta name="twitter:image" content="https://horeca.itkamianets.com/assets/logo.png" />
+		<meta name="twitter:image:src" content="https://horeca.itkamianets.com/assets/logo.png" />
+
+		<link rel="canonical" href="https://horeca.itkamianets.com/" />
+		<link rel="icon" type="image/x-icon" href="favicon.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<app-root></app-root>
+	</body>
+</html>

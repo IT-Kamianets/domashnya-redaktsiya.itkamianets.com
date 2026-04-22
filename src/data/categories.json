@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Breakfasts",
+		"description": "Morning meals and light starters.",
+		"section": "food",
+		"slug": "breakfasts"
+	},
+	{
+		"name": "Coffee",
+		"description": "Hot and cold coffee drinks.",
+		"section": "drinks",
+		"slug": "coffee"
+	}
+]

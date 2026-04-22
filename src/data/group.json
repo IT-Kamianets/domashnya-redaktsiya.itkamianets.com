@@ -1,0 +1,62 @@
+[
+	{
+		"id": "food",
+		"names": {
+			"ua": "Їжа",
+			"bg": "Храна",
+			"hr": "Hrana",
+			"cs": "Jídlo",
+			"da": "Mad",
+			"nl": "Eten",
+			"en": "Food",
+			"et": "Toit",
+			"fi": "Ruoka",
+			"fr": "Nourriture",
+			"de": "Essen",
+			"el": "Φαγητό",
+			"hu": "Étel",
+			"ga": "Bia",
+			"it": "Cibo",
+			"lv": "Ēdiens",
+			"lt": "Maistas",
+			"mt": "Ikel",
+			"pl": "Jedzenie",
+			"pt": "Comida",
+			"ro": "Mâncare",
+			"sk": "Jedlo",
+			"sl": "Hrana",
+			"es": "Comida",
+			"sv": "Mat"
+		}
+	},
+	{
+		"id": "drinks",
+		"names": {
+			"ua": "Напої",
+			"bg": "Напитки",
+			"hr": "Pića",
+			"cs": "Nápoje",
+			"da": "Drikkevarer",
+			"nl": "Dranken",
+			"en": "Drinks",
+			"et": "Joogid",
+			"fi": "Juomat",
+			"fr": "Boissons",
+			"de": "Getränke",
+			"el": "Ποτά",
+			"hu": "Italok",
+			"ga": "Deochanna",
+			"it": "Bevande",
+			"lv": "Dzērieni",
+			"lt": "Gėrimai",
+			"mt": "Xorb",
+			"pl": "Napoje",
+			"pt": "Bebidas",
+			"ro": "Băuturi",
+			"sk": "Nápoje",
+			"sl": "Pijače",
+			"es": "Bebidas",
+			"sv": "Drycker"
+		}
+	}
+]

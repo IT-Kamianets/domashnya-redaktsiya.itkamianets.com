@@ -1,0 +1,51 @@
+<main class="mx-auto max-w-[var(--container)] px-3 pb-8 pt-3 sm:px-4 sm:pb-10">
+	<section
+		class="overflow-hidden rounded-[1.2rem] border border-[var(--c-border)] bg-[var(--c-bg-secondary)] shadow-[var(--shadow-sm)]"
+	>
+		<div
+			class="border-b border-[var(--c-border)] bg-[linear-gradient(135deg,rgba(197,61,61,0.14),rgba(217,168,88,0.08))] px-4 py-5 sm:px-5"
+		>
+			<p
+				class="text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--c-secondary)]"
+				translate
+			>
+				Gallery
+			</p>
+		</div>
+
+		<div class="grid gap-3 p-3 sm:grid-cols-2 sm:p-4 lg:grid-cols-3">
+			@for (photo of photos; track photo.src) {
+				<figure
+					class="overflow-hidden rounded-[1rem] border border-[var(--c-border)] bg-[var(--c-bg-primary)]"
+				>
+					<button
+						class="gallery-trigger block w-full cursor-zoom-in"
+						[attr.aria-label]="'Open photo in full screen: ' + photo.alt"
+						(click)="openPhoto(photo)"
+						type="button"
+					>
+						<img
+							class="gallery-photo h-72 w-full object-cover sm:h-80"
+							[attr.alt]="photo.alt"
+							[src]="photo.src"
+							loading="lazy"
+						/>
+					</button>
+				</figure>
+			}
+		</div>
+	</section>
+
+	@if (selectedPhoto(); as photo) {
+		<div
+			class="fullscreen-backdrop fixed inset-0 z-50 flex cursor-zoom-out items-center justify-center bg-black/88 p-4"
+		>
+			<img
+				class="fullscreen-photo max-h-full max-w-full rounded-[1rem] object-contain"
+				[attr.alt]="photo.alt"
+				[src]="photo.src"
+				(click)="closePhoto()"
+			/>
+		</div>
+	}
+</main>
