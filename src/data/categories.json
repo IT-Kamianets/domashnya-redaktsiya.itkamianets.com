@@ -1,14 +1,21 @@
 [
-	{
-		"name": "Breakfasts",
-		"description": "Morning meals and light starters.",
-		"section": "food",
-		"slug": "breakfasts"
-	},
-	{
-		"name": "Coffee",
-		"description": "Hot and cold coffee drinks.",
-		"section": "drinks",
-		"slug": "coffee"
-	}
+  {
+    "name": "First courses",
+    "description": "Traditional soups and broths.",
+    "section": "food",
+    "slug": "first-courses"
+  },
+  {
+    "name": "Main courses",
+    "description": "Hearty meat and vegetable dishes.",
+    "section": "food",
+    "slug": "main-courses"
+  },
+  {
+    "name": "Pancakes",
+    "description": "Sweet handmade pancakes.",
+    "section": "desserts",
+    "slug": "pancakes"
+  }
+  
 ]
