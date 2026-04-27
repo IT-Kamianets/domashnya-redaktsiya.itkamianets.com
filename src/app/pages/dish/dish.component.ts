@@ -23,6 +23,7 @@ interface DishSuggestion {
 	title: string;
 	description: string | null;
 	price: string;
+	image: string;
 	imageAlt: string;
 }
 
@@ -35,6 +36,7 @@ interface DishViewModel {
 	fullDescription: string | null;
 	price: string;
 	labels: string[];
+	image: string;
 	imageAlt: string;
 	facts: DishFact[];
 	suggestions: DishSuggestion[];
@@ -95,6 +97,7 @@ function _buildDishViewModel(
 		labels: item.labels
 			.map((label) => cleanText(translateMenuValue(label, language)))
 			.filter((label): label is string => Boolean(label)),
+		image: item.image,
 		imageAlt: translateMenuValue(item.title, language) ?? item.slug,
 		facts: _buildFacts(section, item, language, translateService),
 		suggestions: _buildSuggestions(section, item, language, translateService),
@@ -163,6 +166,7 @@ function _buildSuggestions(
 			title: translateMenuValue(item.title, language) ?? item.slug,
 			description: cleanText(translateMenuValue(item.description, language)),
 			price: _formatPrice(item.price, translateService),
+			image: item.image,
 			imageAlt: translateMenuValue(item.title, language) ?? item.slug,
 		}));
 }

@@ -52,6 +52,16 @@
 								"input": "src/assets"
 							},
 							{
+								"glob": "**/*",
+								"input": "src/assets/item",
+								"output": "/item"
+							},
+							{
+								"glob": "**/*",
+								"input": "src/assets/room",
+								"output": "/room"
+							},
+							{
 								"glob": "*.json",
 								"input": "src/i18n",
 								"output": "/i18n"
