@@ -1,42 +1,58 @@
 [
   {
-    "slug": "specialty-dishes",
-    "document": "itemCategory",
-    "data": {
-      "name": { "ua": "Авторська страва", "en": "Author's dish" },
-      "description": { "ua": "Унікальні рецепти від шеф-кухаря.", "en": "Unique recipes from our chef." }
-    }
-  },
-  {
     "slug": "first-courses",
     "document": "itemCategory",
     "data": {
-      "name": { "ua": "Перші страви", "en": "First courses" },
-      "description": { "ua": "Традиційні супи та бульйони.", "en": "Traditional soups and broths." }
-    }
-  },
-  {
-    "slug": "salads",
-    "document": "itemCategory",
-    "data": {
-      "name": { "ua": "Салати", "en": "Salads" },
-      "description": { "ua": "Свіжі та ситні листкові салати.", "en": "Fresh and hearty layered salads." }
+      "name": {
+        "ua": "Перші страви",
+        "en": "First courses",
+        "es": "Primeros platos",
+        "sl": "Juhe",
+        "sv": "Förrätter",
+        "pl": "Pierwsze dania",
+        "pt": "Primeiros pratos",
+        "ro": "Feluri principale",
+        "sk": "Polievky"
+      },
+      "description": {
+        "ua": "Традиційні супи та бульйони.",
+        "en": "Traditional soups and broths.",
+        "es": "Sopas y caldos tradicionales.",
+        "sl": "Tradicionalne juhe in obare.",
+        "sv": "Traditionella soppor och buljonger.",
+        "pl": "Tradycyjne zupy i buliony.",
+        "pt": "Sopas e caldos tradicionais.",
+        "ro": "Supe și ciorbe tradiționale.",
+        "sk": "Tradičné polievky a vývary."
+      }
     }
   },
   {
     "slug": "pancakes",
     "document": "itemCategory",
     "data": {
-      "name": { "ua": "Млинці", "en": "Pancakes" },
-      "description": { "ua": "Солодкі та солоні млинці ручної роботи.", "en": "Sweet and savory handmade pancakes." }
-    }
-  },
-  {
-    "slug": "main-courses",
-    "document": "itemCategory",
-    "data": {
-      "name": { "ua": "Основні страви", "en": "Main courses" },
-      "description": { "ua": "Ситні м’ясні та овочеві страви.", "en": "Hearty meat and vegetable dishes." }
+      "name": {
+        "ua": "Млинці",
+        "en": "Pancakes",
+        "es": "Panqueques",
+        "sl": "Palačinke",
+        "sv": "Pannkakor",
+        "pl": "Naleśniki",
+        "pt": "Panquecas",
+        "ro": "Clătite",
+        "sk": "Palacinky"
+      },
+      "description": {
+        "ua": "Солодкі та солоні млинці ручної роботи.",
+        "en": "Sweet and savory handmade pancakes.",
+        "es": "Panqueques dulces y salados hechos a mano.",
+        "sl": "Sladke in slane ročno izdelane palačinke.",
+        "sv": "Söta och matiga handgjorda pannkakor.",
+        "pl": "Słodkie i wytrawne ręcznie robione naleśniki.",
+        "pt": "Panquecas artesanais doces e salgadas.",
+        "ro": "Clătite dulci și sărate făcute manual.",
+        "sk": "Sladké a slané ručne robené palacinky."
+      }
     }
   }
 ]

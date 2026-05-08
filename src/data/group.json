@@ -1,17 +1,56 @@
 [
-	{
-		"id": "food",
-		"names": {
-			"ua": "Їжа",
-			"en": "Food"
-		}
-	},
-	{
-		"id": "desserts",
-		"names": {
-			"ua": "Десерти",
-			"en": "Desserts"
-		}
-	}
-	
+  {
+    "id": "food",
+    "names": {
+      "ua": "Їжа",
+      "en": "Food",
+      "bg": "Храна",
+      "cs": "Jídlo",
+      "da": "Mad",
+      "de": "Essen",
+      "mt": "Ikel",
+      "nl": "Voeding",
+      "es": "Comida",
+      "et": "Toit",
+      "fi": "Ruoka",
+      "fr": "Nourriture",
+      "ga": "Bia",
+      "hr": "Hrana",
+      "hu": "Étel",
+      "it": "Cibo",
+      "sl": "Hrana",
+      "sv": "Mat",
+      "pl": "Jedzenie",
+      "pt": "Comida",
+      "ro": "Mâncare",
+      "sk": "Jedlo"
+    }
+  },
+  {
+    "id": "desserts",
+    "names": {
+      "ua": "Десерти",
+      "en": "Desserts",
+      "bg": "Десерти",
+      "cs": "Dezerty",
+      "da": "Desserter",
+      "de": "Desserts",
+      "mt": "Deżerti",
+      "nl": "Desserts",
+      "es": "Postres",
+      "et": "Magustoidud",
+      "fi": "Jälkiruoat",
+      "fr": "Desserts",
+      "ga": "Milseoga",
+      "hr": "Deserti",
+      "hu": "Desszertek",
+      "it": "Dolci",
+      "sl": "Sladice",
+      "sv": "Efterrätter",
+      "pl": "Desery",
+      "pt": "Sobremesas",
+      "ro": "Deserturi",
+      "sk": "Dezerty"
+    }
+  }
 ]
