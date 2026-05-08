@@ -1,30 +1,30 @@
 :root {
     color-scheme: light;
 
-    /* Акценти */
+    /* Акценти - класичні контрастні кольори */
     --c-primary: #A63D3D;
     --c-primary-hover: #913434;
 
     --c-secondary: #5E6C8A;
     --c-secondary-hover: #4F5D79;
 
-    /* Фони */
-    --c-bg-primary: #162033;     /* темно-синій головний фон */
-    --c-bg-secondary: #1F2B42;   /* секції */
-    --c-bg-tertiary: #7A2323;    /* передній план темно-червоний */
+    /* Фони - дефолтна світла тема */
+    --c-bg-primary: #FFFFFF;     /* чистий білий фон */
+    --c-bg-secondary: #F8F9FA;   /* дуже світлий сірий для секцій */
+    --c-bg-tertiary: #F1F3F5;    /* світлий акцентний фон */
 
-    /* Текст */
-    --c-text-primary: #E4DFD8;
-    --c-text-secondary: #FFF8F6;
-    --c-text-muted: #B4AFA8;
-    --c-placeholder: #B4AFA888;
+    /* Текст - максимально чіткий та видимий */
+    --c-text-primary: #1A1A1A;   /* майже чорний для основного тексту */
+    --c-text-secondary: #4A4A4A; /* темно-сірий для підзаголовків */
+    --c-text-muted: #6C757D;     /* сірий для менш важливих деталей */
+    --c-placeholder: #ADB5BD;
 
     /* Межі */
-    --c-border: #33415C;
+    --c-border: #DEE2E6;
 
-    /* Тіні */
-    --shadow-sm: 0 2px 6px rgba(0,0,0,.18);
-    --shadow-md: 0 10px 24px rgba(0,0,0,.30);
+    /* Тіні - м'якші для білого фону */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,.10);
 
     /* Типографіка */
     --ff-base: 'Poppins', system-ui, sans-serif;
@@ -35,11 +35,10 @@
     --radius-btn: 999px;
 
     /* Фокус */
-    --focus-ring: 0 0 0 3px rgba(166,61,61,.22);
+    --focus-ring: 0 0 0 3px rgba(166,61,61,.2);
 }
 
-
-
+/* Темна тема залишається без змін */
 html[data-mode='dark']{
     color-scheme: dark;
 
