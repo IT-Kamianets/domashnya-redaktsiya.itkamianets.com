@@ -73,10 +73,5 @@ export class RoomsComponent {
 			href: 'https://example.com/horeca-demo/viber',
 			description: 'Демо-чат для швидкого бронювання',
 		},
-		{
-			label: 'Написати у Telegram',
-			href: 'https://example.com/horeca-demo/telegram',
-			description: '@horeca_demo',
-		},
 	];
 }
