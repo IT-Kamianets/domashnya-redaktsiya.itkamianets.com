@@ -28,6 +28,20 @@
     }
   },
   {
+    "slug": "main-courses",
+    "document": "itemCategory",
+    "data": {
+      "name": {
+        "ua": "Основні страви",
+        "en": "Main courses"
+      },
+      "description": {
+        "ua": "Ситні м'ясні та овочеві страви.",
+        "en": "Hearty meat and vegetable dishes."
+      }
+    }
+  },
+  {
     "slug": "pancakes",
     "document": "itemCategory",
     "data": {

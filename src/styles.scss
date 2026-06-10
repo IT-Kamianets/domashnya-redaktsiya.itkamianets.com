@@ -15,4 +15,9 @@ body {
 	margin: 0;
 }
 
+button, input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+}
+
 @plugin "@tailwindcss/typography";

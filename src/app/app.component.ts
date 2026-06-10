@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { TranslateDirective } from '@wawjs/ngx-translate';
 import { TopbarComponent } from './layouts/topbar/topbar.component';
 import { ScrollService } from './services/scroll.service';
 
 @Component({
 	selector: 'app-root',
-	imports: [RouterLink, RouterLinkActive, RouterOutlet, TopbarComponent],
+	imports: [RouterLink, RouterLinkActive, RouterOutlet, TopbarComponent, TranslateDirective],
 	template: `
 		<app-topbar />
 
@@ -17,7 +18,7 @@ import { ScrollService } from './services/scroll.service';
 			aria-label="Bottom navigation"
 			class="fixed inset-x-0 bottom-0 z-30 border-t border-[var(--c-border)] bg-[var(--c-bg-secondary)]/95 px-2 py-2 backdrop-blur supports-[backdrop-filter]:bg-[var(--c-bg-secondary)]/88"
 		>
-			<div class="mx-auto grid max-w-[var(--container)] grid-cols-5 gap-1">
+			<div class="mx-auto grid max-w-[1100px] grid-cols-5 gap-1">
 				@for (item of navItems; track item.label) {
 					@if (item.route) {
 						<a
@@ -29,7 +30,7 @@ import { ScrollService } from './services/scroll.service';
 							<span class="material-symbols-outlined text-[21px]" aria-hidden="true">
 								{{ item.icon }}
 							</span>
-							<span class="truncate">{{ item.label }}</span>
+							<span class="truncate" translate>{{ item.label }}</span>
 						</a>
 					} @else {
 						<button
@@ -39,7 +40,7 @@ import { ScrollService } from './services/scroll.service';
 							<span class="material-symbols-outlined text-[21px]" aria-hidden="true">
 								{{ item.icon }}
 							</span>
-							<span class="truncate">{{ item.label }}</span>
+							<span class="truncate" translate>{{ item.label }}</span>
 						</button>
 					}
 				}

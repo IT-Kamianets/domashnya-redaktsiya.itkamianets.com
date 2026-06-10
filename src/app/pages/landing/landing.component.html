@@ -1,14 +1,15 @@
-<main class="mx-auto max-w-[var(--container)] px-2 pb-8 pt-2 sm:px-4 sm:pb-10">
+<main class="mx-auto max-w-[1100px] px-2 pb-8 pt-2 sm:px-4 sm:pb-10">
 	<section
 		class="sticky top-0 z-20 overflow-hidden rounded-[1.2rem] border border-[var(--c-border)] bg-[var(--c-bg-secondary)] shadow-[var(--shadow-sm)]"
 	>
+		<!-- Групи (категорії) -->
 		<div class="border-b border-[var(--c-border)] px-3 pt-2">
 			<div class="no-scrollbar flex gap-4 overflow-x-auto text-[15px] font-semibold">
 				@for (group of groups(); track trackByGroup($index, group)) {
 					<button
 						class="shrink-0 border-b-2 px-0 pb-2 transition-colors duration-200"
-						[class.border-[var(--c-secondary)]]="selectedGroupId() === group.id"
-						[class.text-[var(--c-secondary)]]="selectedGroupId() === group.id"
+						[class.border-[var(--c-primary)]]="selectedGroupId() === group.id"
+						[class.text-[var(--c-primary)]]="selectedGroupId() === group.id"
 						[class.border-transparent]="selectedGroupId() !== group.id"
 						[class.text-[var(--c-text-muted)]]="selectedGroupId() !== group.id"
 						(click)="setGroup(group.id)"
@@ -20,11 +21,18 @@
 			</div>
 		</div>
 
+		<!-- Підкатегорії -->
 		<div class="border-b border-[var(--c-border)] bg-[var(--c-bg-primary)]/50 px-2 py-2">
 			<div class="no-scrollbar flex gap-2 overflow-x-auto">
 				@for (section of activeSections(); track trackBySection($index, section)) {
 					<a
-						class="shrink-0 rounded-[0.65rem] bg-[var(--c-bg-secondary)] px-3 py-1.5 text-[13px] font-semibold text-[var(--c-secondary)] shadow-[0_0_0_1px_var(--c-border)_inset]"
+						class="shrink-0 rounded-[0.65rem] px-3 py-1.5 text-[13px] font-semibold transition-colors duration-200"
+						[class.bg-[var(--c-primary)]]="activeSectionId() === section.id"
+						[class.text-white]="activeSectionId() === section.id"
+						[class.bg-[var(--c-bg-secondary)]]="activeSectionId() !== section.id"
+						[class.text-[var(--c-text-muted)]]="activeSectionId() !== section.id"
+						[class.shadow-[0_0_0_1px_var(--c-border)_inset]]="activeSectionId() !== section.id"
+						[attr.data-pill]="section.id"
 						[href]="'#' + section.id"
 					>
 						{{ section.name }}
@@ -36,7 +44,7 @@
 
 	<section class="mt-3 space-y-4">
 		@for (section of activeSections(); track trackBySection($index, section)) {
-			<section class="scroll-mt-28" [attr.id]="section.id">
+			<section class="scroll-mt-28" [attr.id]="section.id" [attr.data-section-id]="section.id">
 				<div class="mb-2 flex items-center gap-2 px-1">
 					<h2
 						class="shrink-0 text-[13px] font-semibold uppercase tracking-[0.12em] text-[var(--c-text-secondary)]"
